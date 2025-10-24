@@ -118,11 +118,11 @@ This demonstrates the relative effectiveness of digital paid channels in driving
 | Radio                  | 0.006492  | 2.45%      |
 | TV                     | 0.003108  | 1.17%      |
 
-### Interpretation
+### Conclusion
 1. Focus marketing dollars: Display, SEM, and eFlyers are top three — reallocating spend toward these may maximize revenue.
 
 2. Optimization opportunities: Social, Email, and Affiliate could be tested for better targeting or messaging.
 
 3. Budget justification: The percentages provide a clear quantitative justification for marketing spend allocation.
 
-4.MMM insights: Stakeholders can now see relative ROI across channels rather than just raw spend or impressions.
+4. MMM insights: Stakeholders can now see relative ROI across channels rather than just raw spend or impressions.
