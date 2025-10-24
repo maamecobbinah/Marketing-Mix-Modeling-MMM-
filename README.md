@@ -49,7 +49,7 @@ er $1 of spend).
 1. Target Customers: Home Enthusiasts, Professional Designers, DIY Decorators
 2. Audience Targeting: Keywords, Broad, Interests, Retargeting
 
-## Columns & Data Definitions
+### Columns & Data Definitions
 
 | Column              | Description                                   | Example                        |
 |----------------------|-----------------------------------------------|--------------------------------|
