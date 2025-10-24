@@ -87,7 +87,7 @@ er $1 of spend).
 
 # Results
 ### Model Performance Summary
-We built a Marketing Mix Model (MMM) for Haven Home Living to estimate the contribution of marketing channels to daily revenue. 
+This is a Marketing Mix Model (MMM) for Haven Home Living to estimate the contribution of marketing channels to daily revenue. 
 Our XGBoost model achieved the best performance, explaining 95% of the variation in daily revenue.
 
 | Model              | R²    | RMSE       | MAE        |
