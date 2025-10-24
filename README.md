@@ -49,3 +49,28 @@ er $1 of spend).
 1. Target Customers: Home Enthusiasts, Professional Designers, DIY Decorators
 2. Audience Targeting: Keywords, Broad, Interests, Retargeting
 
+## Columns & Data Definitions
+
+| Column              | Description                                   | Example                        |
+|----------------------|-----------------------------------------------|--------------------------------|
+| date                 | Calendar date (YYYY-MM-DD).                   | 2024-03-15                     |
+| category             | Product category.                             | Kitchen Appliances              |
+| channel              | Main marketing channel.                       | Social                         |
+| ad_platform          | Platform or network within the channel.       | Pinterest                      |
+| campaign_name        | Campaign identifier.                          | Spring Refresh 2024             |
+| ad_name              | Specific ad creative name.                    | Pinterest – Air Fryer Carousel  |
+| target_customer      | Audience segment.                             | Home Enthusiast                 |
+| audience_targeting   | Targeting type.                               | Interests                      |
+| price                | Average price for that category that day.     | 199.99                          |
+| promotion_discount   | Fractional discount applied (0.10 = 10%).     | 0.15                            |
+| distribution_index   | Product availability (0–1).                   | 0.90                            |
+| holiday_flag         | 1 if date includes a retail holiday.          | 1                               |
+| holiday_name         | Name of holiday (if any).                     | Mother’s Day                    |
+| revenue              | Daily total revenue (CAD).                    | 25,000                          |
+| sales_volume         | Total units sold.                             | 310                             |
+| market_share         | Estimated market share (0–1).                 | 0.12                            |
+| spend                | Daily ad spend (CAD).                         | 1,200                           |
+| impressions          | Ads served that day.                          | 220,000                         |
+| clicks               | Clicks generated.                             | 3,400                           |
+| add_to_carts         | Add-to-cart actions.                          | 680                             |
+| orders               | Completed orders.                             | 320                             |
