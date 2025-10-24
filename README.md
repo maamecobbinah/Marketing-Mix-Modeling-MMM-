@@ -87,9 +87,8 @@ er $1 of spend).
 
 # Results
 ### Model Performance Summary
-Our marketing mix model achieved an R² of 0.95, explaining 95% of daily revenue variation.
-
-While linear and ridge regressions provided interpretable baselines, the XGBoost model delivered the best performance, reducing prediction error by 10% (RMSE 2,610 vs. 2,900).
+We built a Marketing Mix Model (MMM) for Haven Home Living to estimate the contribution of marketing channels to daily revenue. 
+Our XGBoost model achieved the best performance, explaining 95% of the variation in daily revenue.
 
 | Model              | R²    | RMSE       | MAE        |
 |-------------------|-------|-----------|-----------|
@@ -98,11 +97,9 @@ While linear and ridge regressions provided interpretable baselines, the XGBoost
 | XGBoost            | 0.947 | 2,610.89  | 1,839.03  |
 
 ### Marketing Channel Importance
-Based on our XGBoost MMM model, Display ads contributed the largest share of incremental revenue (36%), followed by SEM (15%) and eFlyers (15%). 
+Based on the XGBoost model, Display ads contributed the largest share of incremental revenue (36%), followed by SEM (15%) and eFlyers (15%). 
 
-Channels like Social, Email, and SEO contributed between 3–8%, while traditional channels such as Radio and TV contributed less than 3% each. 
-
-This demonstrates the relative effectiveness of digital paid channels in driving short-term revenue for Haven Home Living. See ranking below
+Channels like Social, Email, and SEO contributed 3–8%, while traditional channels such as Radio and TV contributed less than 3%
 
 | Channel                | Importance | Percentage |
 |------------------------|-----------|------------|
@@ -119,10 +116,10 @@ This demonstrates the relative effectiveness of digital paid channels in driving
 | TV                     | 0.003108  | 1.17%      |
 
 # Conclusion
-1. Focus marketing dollars: Display, SEM, and eFlyers are top three — reallocating spend toward these may maximize revenue.
+1. Focus marketing dollars: Display, SEM, and eFlyers are the top three channels; reallocating spend toward these may maximize revenue.
 
-2. Optimization opportunities: Social, Email, and Affiliate could be tested for better targeting or messaging.
+2. Optimization opportunities: Social, Email, and Affiliate channels could be tested for better targeting or messaging.
 
-3. Budget justification: The percentages provide a clear quantitative justification for marketing spend allocation.
+3. Budget justification: Channel contribution percentages provide a quantitative basis for marketing spend allocation.
 
-4. MMM insights: Stakeholders can now see relative ROI across channels rather than just raw spend or impressions.
+4. MMM insights: Stakeholders can now see relative ROI across channels, helping guide data-driven marketing decisions.
