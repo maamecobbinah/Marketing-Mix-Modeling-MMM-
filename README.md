@@ -1,4 +1,4 @@
-# Marketing-mix-modeling-MMM-
+# Marketing Mix Modeling (MMM)
 This repository stores data for a hypothetical company who is seeking to understand how each part of their marketing impacts customer behaviour, sales, and ROI.
 # Problem Statement
 Haven Home Living is a hypothetical home living company trying to understand which marketing channels truly drive sales. 
