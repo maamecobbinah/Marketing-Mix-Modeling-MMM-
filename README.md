@@ -16,6 +16,18 @@ To address these, this project applies Marketing Mix Modeling (MMM) — a statis
 1. Encoded holiday and event effects (e.g., Family Day, Easter, Mother’s Day).
 2. Adjusted for product availability, price fluctuations, and promotion intensity.
 ### Modeling Techniques
+To estimate the impact of marketing and operational factors on daily revenue, multiple modeling approaches were tested:
+##### 1. Baseline Linear Regression
+Provides interpretable coefficients to estimate elasticities (e.g., % change in sales per % change in spend).
+##### 2. Regularized Regression (Ridge / Lasso)
+Handles multicollinearity between marketing channels and prevents overfitting.
+##### 3. Tree-Based Models (Random Forest, XGBoost)
+Captures non-linear effects and complex interactions (e.g., how spend effectiveness changes at high budgets).
+##### 4. Bayesian Hierarchical Regression
+Incorporates uncertainty estimation and allows for cross-category or regional pooling.
+##### 5. Adstock and Diminishing Returns Transformations
+Preprocessing techniques to account for lag (carryover) and saturation (diminishing effect) of marketing activities.
+Each model was trained and evaluated using a train/test split, and the final selection was based on both predictive accuracy and business interpretability.
 ### Insights & Visualization
 1. Channel ROI comparison (revenue per $1 of spend).
 2. Simulated optimal budget allocation scenarios.
