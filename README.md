@@ -19,13 +19,11 @@ To address these, this project applies Marketing Mix Modeling (MMM) — a statis
 To estimate the impact of marketing and operational factors on daily revenue, multiple modeling approaches were tested:
 #### 1. Baseline Linear Regression
 Provides interpretable coefficients to estimate elasticities (e.g., % change in sales per % change in spend).
-#### 2. Regularized Regression (Ridge / Lasso)
+#### 2. Regularized Regression (Ridge )
 Handles multicollinearity between marketing channels and prevents overfitting.
-#### 3. Tree-Based Models (Random Forest, XGBoost)
+#### 3. Tree-Based Models (XGBoost)
 Captures non-linear effects and complex interactions (e.g., how spend effectiveness changes at high budgets).
-#### 4. Bayesian Hierarchical Regression
-Incorporates uncertainty estimation and allows for cross-category or regional pooling.
-#### 5. Adstock and Diminishing Returns Transformations
+#### 4. Adstock and Diminishing Returns Transformations
 Preprocessing techniques to account for lag (carryover) and saturation (diminishing effect) of marketing activities.
 Each model was trained and evaluated using a train/test split, and the final selection was based on both predictive accuracy and business interpretability.
 ### Insights & Visualization
@@ -86,3 +84,45 @@ er $1 of spend).
 | clicks               | Clicks generated.                             | 3,400                           |
 | add_to_carts         | Add-to-cart actions.                          | 680                             |
 | orders               | Completed orders.                             | 320                             |
+
+### Results
+#### Model Performance Summary
+Our marketing mix model achieved an R² of 0.95, explaining 95% of daily revenue variation.
+
+While linear and ridge regressions provided interpretable baselines, the XGBoost model delivered the best performance, reducing prediction error by 10% (RMSE 2,610 vs. 2,900).
+
+| Model              | R²    | RMSE       | MAE        |
+|-------------------|-------|-----------|-----------|
+| Linear Regression  | 0.935 | 2,900.13  | 2,090.23  |
+| Ridge Regression   | 0.933 | 2,926.86  | 2,079.70  |
+| XGBoost            | 0.947 | 2,610.89  | 1,839.03  |
+
+#### Marketing Channel Importance
+Based on our XGBoost MMM model, Display ads contributed the largest share of incremental revenue (36%), followed by SEM (15%) and eFlyers (15%). 
+
+Channels like Social, Email, and SEO contributed between 3–8%, while traditional channels such as Radio and TV contributed less than 3% each. 
+
+This demonstrates the relative effectiveness of digital paid channels in driving short-term revenue for Haven Home Living. See ranking below
+
+| Channel                | Importance | Percentage |
+|------------------------|-----------|------------|
+| Display                | 0.096790  | 36.48%     |
+| SEM                    | 0.040212  | 15.16%     |
+| eFlyers                | 0.039157  | 14.76%     |
+| Partnership/Affiliate  | 0.024846  | 9.37%      |
+| Social                 | 0.020590  | 7.76%      |
+| Email                  | 0.010320  | 3.89%      |
+| SEO                    | 0.008613  | 3.25%      |
+| Referring Domain       | 0.007945  | 2.99%      |
+| Direct                 | 0.007235  | 2.73%      |
+| Radio                  | 0.006492  | 2.45%      |
+| TV                     | 0.003108  | 1.17%      |
+
+### Interpretation
+1. Focus marketing dollars: Display, SEM, and eFlyers are top three — reallocating spend toward these may maximize revenue.
+
+2. Optimization opportunities: Social, Email, and Affiliate could be tested for better targeting or messaging.
+
+3. Budget justification: The percentages provide a clear quantitative justification for marketing spend allocation.
+
+4.MMM insights: Stakeholders can now see relative ROI across channels rather than just raw spend or impressions.
